@@ -1,10 +1,10 @@
 export default function dedent(input: string): string;
 export default function dedent(
-  input: TemplateStringsArray,
+  input: string[],
   ...values: any[]
 ): string;
 export default function dedent(
-  input: string | TemplateStringsArray,
+  input: string | string[],
   ...values: any[]
 ) {
   const strings = typeof input === "string" ? [input] : input;
